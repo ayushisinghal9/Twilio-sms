@@ -181,7 +181,7 @@ exports.execute = function (req, res) {
  */
 exports.publish = function (req, res) {
 
-    console.log("5 -- For Publish");	
+    console.log("5 -- For Publish"+req);	
     console.log("4");	
     console.log("3");	
     console.log("2");	
