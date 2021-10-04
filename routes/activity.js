@@ -105,6 +105,7 @@ exports.execute = function (req, res) {
     const accountSid = requestBody.accountSid;
     const authToken = requestBody.authToken;
     const to = requestBody.to;
+    console.log("to"+to);
     const from = requestBody.messagingService;
     const body = requestBody.body;;
 
@@ -114,8 +115,7 @@ exports.execute = function (req, res) {
           .create({ 
              body: body,
              from: '+18646592286',
-             to: to,
-             provideFeedback:true
+             to: to
            }) 
           .then( (message) => {
             console.log('Response:'+JSON.stringify(message))
