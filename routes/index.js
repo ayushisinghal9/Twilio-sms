@@ -1,7 +1,7 @@
 'use strict';
 
 // Deps
-var activity = require('./activity');
+var activity = require('./routes/activity'); //path change
 
 /*
  * GET home page.
